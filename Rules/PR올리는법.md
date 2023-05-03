@@ -8,7 +8,7 @@
 # Step1. 새로운 브랜치 생성
 아래 예시는 PR 올려보는 것을 연습하는 것이기 때문에 PR_test 브랜치를 기준으로 작성되었습니다.
 ### 1. PR_test 브랜치에서 New branch 를 생성합니다.
-<img src = "./PR_Step/Step1_branch생성.png" width = "800" height = "500">
+<img src = "./Rules/Step1_branch생성.png" width = "800" height = "500">
 
 ### 2. New branch 명 입력
 작성하고자 하는 코드(기능)을 `feat-OO` 으로 지정하여 branch를 생성합니다.

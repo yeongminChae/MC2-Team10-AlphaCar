@@ -29,5 +29,6 @@ Apple Developer Academy 🌓 알파카 팀🦙의 레포지토리입니다.
 ## 코드 리뷰 방법
 - 최소 2명 이상의 approve를 받아야 develop에 머지할 수 있습니다.
 - 팀원 중 누군가 PR를 올렸다면 **카톡**에 공유하고, 나머지 팀원들은(리뷰어)는 최대한 **12시간** 안에는 꼭 확인해 주세요! 
-- PR Template ➡️ [PR Template](./Rules/PR_template.md) 
+- PR 올리는 방법 → [PR 올리는 방법](./Rules/PR올리는법.md) 
+- PR Template ➡️ [PR template](./Rules/PR_template.md) 
 
