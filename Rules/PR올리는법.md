@@ -40,14 +40,16 @@ push까지 하면 원래 저장소에 아래 사진처럼 노란색 칸처럼 �
 - 주의 사항❗️: **base**가 내가 머지하고자 하는 브랜치로 잘 되어있는지 꼭!꼭!꼭! 확인하시길 바랍니다!(현재 예시에서는 feat-joy의 PR연습 브랜치에서 PR_test로 머지하는 거라 base가 PR_test임을 확인할 수 있습니다.)  
 
 # Step5. Review 받기
-<img src = "Step5_생성된PR확인.png" width = "800" height = "400">
+<!-- <img src = "Step5_생성된PR확인.png" width = "800" height = "400"> -->
+<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step5_%EC%83%9D%EC%84%B1%EB%90%9CPR%ED%99%95%EC%9D%B8.png?raw=true" width = "800" height = "400">
 <br/>
 
 - 최소 2명 이상의 approve를 받아야 develop(예시에서는 PR_test브랜치)에 머지할 수 있습니다.
 - 팀원 중 누군가 PR를 올렸다면 카톡에 공유하고, 나머지 팀원들은(리뷰어)는 최대한 12시간 안에는 꼭 확인해 주세요!
 
 # Step6. Merge하기
-<img src = "Step6_머지하기.png" width = "800" height = "400">
+<!-- <img src = "Step6_머지하기.png" width = "800" height = "400"> -->
+<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step6_%EB%A8%B8%EC%A7%80%ED%95%98%EA%B8%B0.png?raw=true" width = "800" height = "400">
 <br/>
 
 - 만약 merge conflict이 생겼다면 한 줄 한 줄 맞추어 가며 에러를 해결하거나 다른 팀원에게 도움을 요청해 주세요.
