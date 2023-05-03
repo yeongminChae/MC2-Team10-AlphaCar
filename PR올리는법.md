@@ -8,12 +8,12 @@
 # Step1. 새로운 브랜치 생성
 아래 예시는 PR 올려보는 것을 연습하는 것이기 때문에 PR_test 브랜치를 기준으로 작성되었습니다.
 ### 1. PR_test 브랜치에서 New branch 를 생성합니다.
-<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step1_branch%EC%83%9D%EC%84%B1.png" width = "800" height = "500">
+<img src = "./Rules/Step1_branch생성.png" width = "800" height = "500">
 
 ### 2. New branch 명 입력
 작성하고자 하는 코드(기능)을 `feat-OO` 으로 지정하여 branch를 생성합니다.
 
-<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step1_branch%EB%AA%85%EC%84%A4%EC%A0%95.png" width = "800" height = "500">
+<img src = "./Rules/Step1_branch명설정.png" width = "800" height = "500">
 
 예시에서는 **feat-joy의PR연습** 으로 브랜치를 생성했는데 각자 feat-OO의PR연습으로 브랜치 생성해서 PR 연습해 보는 것을 추천합니다.
 
@@ -23,17 +23,17 @@
 
 # Step3. Commit, Push하기
 commit, push가 뭔지 모르시는 분은 https://backlog.com/git-tutorial/kr/ 참조하시길 바랍니다.<br/>
-<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step3_commit%2Cpush%ED%95%98%EA%B8%B0.png" width = "800" height = "500">
+<img src = "./Rules/Step3_commit,push하기.png" width = "800" height = "500">
 
 # Step4. Pull Request 
 ### 1. PR 버튼 누르기
 push까지 하면 원래 저장소에 아래 사진처럼 노란색 칸처럼 어떤 push가 있엇다와 **compare & pull request**란 초록색 버튼이 활성화된 것을 확인할 수 있습니다. 초록 버튼 클릭 후 이동
 <br/>
-<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step4_PR%EB%B2%84%ED%8A%BC%20%EB%88%84%EB%A5%B4%EA%B8%B0.png" width = "800" height = "400">
+<img src = "./Rules/Step4_PR버튼 누르기.png" width = "800" height = "400">
 
 
 ### 2. PR template에 따라 작성하기
-<img src = "https://github.com/DeveloperAcademy-POSTECH/MC2-Team10-AlphaCar/blob/main/Rules/Step4_PRtemplate%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0.png" width = "800" height = "500">
+<img src = "./Rules/Step4_PRtemplate에 따라 작성하기.png" width = "800" height = "500">
 <br/>
 
 - PR Template(작업 주제, 구현 사항, 궁금한 점 & 성장 포인트) 를 기록한 후 Create pull request합니다. (아래 캡처 사진 확인)
