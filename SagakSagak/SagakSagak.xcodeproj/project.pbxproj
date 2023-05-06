@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D728D2A070BFA00119DB9 /* Colors.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D812A008FB50015EC23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D802A008FB50015EC23 /* ContentView.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A83D728D2A070BFA00119DB9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
 		A8F10D802A008FB50015EC23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A83D728C2A070BEF00119DB9 /* Color */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A83D728C2A070BEF00119DB9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A83D728D2A070BFA00119DB9 /* Colors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		A8F10D722A008FB50015EC23 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +69,7 @@
 		A8F10D7D2A008FB50015EC23 /* SagakSagak */ = {
 			isa = PBXGroup;
 			children = (
+				A83D728B2A070BDB00119DB9 /* DesignSystem */,
 				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
 				A8F10D802A008FB50015EC23 /* ContentView.swift */,
 				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F10D812A008FB50015EC23 /* ContentView.swift in Sources */,
+				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
