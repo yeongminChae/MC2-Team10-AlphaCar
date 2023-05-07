@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-// MARK: 화면 전환 종류
 enum Page: String, Identifiable {
     case splash, login, signup
     
@@ -40,12 +40,11 @@ class Coordinator: ObservableObject{
         case .splash:
             SplashView()
         case .login:
-            LoginView()
+            LoginView(store: Store(initialState: LoginDomain.State(), reducer: LoginDomain()))
         case .signup:
             SignUpView()
         }
     }
-    
     
 }
 

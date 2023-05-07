@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SagakSagakApp: App {
     var body: some Scene {
         WindowGroup {
            CoordinatorView()
+            //LoginView(store: Store(initialState: LoginDomain.State(), reducer: LoginDomain()))
         }
     }
 }

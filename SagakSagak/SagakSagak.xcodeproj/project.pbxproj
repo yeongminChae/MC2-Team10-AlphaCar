@@ -14,6 +14,9 @@
 		A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C82A07A4EA00119DB9 /* Coordinator.swift */; };
 		A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */; };
 		A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CE2A07AAC100119DB9 /* SignUpView.swift */; };
+		A83D72D42A07E58200119DB9 /* RepoSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D32A07E58200119DB9 /* RepoSearch.swift */; };
+		A83D72D62A07E5A900119DB9 /* RepoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */; };
+		A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D72A07E5D000119DB9 /* LoginDomain.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
 		A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		A83D72C82A07A4EA00119DB9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		A83D72CE2A07AAC100119DB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		A83D72D32A07E58200119DB9 /* RepoSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearch.swift; sourceTree = "<group>"; };
+		A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchView.swift; sourceTree = "<group>"; };
+		A83D72D72A07E5D000119DB9 /* LoginDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomain.swift; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
 		A8F10D822A008FB60015EC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +74,8 @@
 				A83D72D02A07AB9A00119DB9 /* Splash */,
 				A83D72D12A07ABA700119DB9 /* Login */,
 				A83D72D22A07ABB300119DB9 /* SignUp */,
+				A83D72D32A07E58200119DB9 /* RepoSearch.swift */,
+				A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */,
 			);
 			name = View;
 			path = ../View;
@@ -93,6 +101,7 @@
 		A83D72D12A07ABA700119DB9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A83D72D72A07E5D000119DB9 /* LoginDomain.swift */,
 				A83D72C52A07A47600119DB9 /* LoginView.swift */,
 			);
 			path = Login;
@@ -218,12 +227,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */,
+				A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */,
 				A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */,
 				A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */,
 				A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */,
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
+				A83D72D62A07E5A900119DB9 /* RepoSearchView.swift in Sources */,
+				A83D72D42A07E58200119DB9 /* RepoSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
