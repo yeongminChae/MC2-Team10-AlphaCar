@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D728D2A070BFA00119DB9 /* Colors.swift */; };
+		A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A83D72992A07938600119DB9 /* ComposableArchitecture */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D812A008FB50015EC23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D802A008FB50015EC23 /* ContentView.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +52,15 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		A83D72972A07934E00119DB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F10D802A008FB50015EC23 /* ContentView.swift */,
+			);
+			name = View;
+			path = ../View;
+			sourceTree = "<group>";
+		};
 		A8F10D722A008FB50015EC23 = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +80,9 @@
 		A8F10D7D2A008FB50015EC23 /* SagakSagak */ = {
 			isa = PBXGroup;
 			children = (
+				A83D72972A07934E00119DB9 /* View */,
 				A83D728B2A070BDB00119DB9 /* DesignSystem */,
 				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
-				A8F10D802A008FB50015EC23 /* ContentView.swift */,
 				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
 				A8F10D842A008FB60015EC23 /* Preview Content */,
 			);
@@ -102,6 +113,9 @@
 			dependencies = (
 			);
 			name = SagakSagak;
+			packageProductDependencies = (
+				A83D72992A07938600119DB9 /* ComposableArchitecture */,
+			);
 			productName = SagakSagak;
 			productReference = A8F10D7B2A008FB50015EC23 /* SagakSagak.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +144,9 @@
 				Base,
 			);
 			mainGroup = A8F10D722A008FB50015EC23;
+			packageReferences = (
+				A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A8F10D7C2A008FB50015EC23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A83D72992A07938600119DB9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8F10D732A008FB50015EC23 /* Project object */;
 }
