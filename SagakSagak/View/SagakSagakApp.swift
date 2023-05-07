@@ -11,7 +11,7 @@ import SwiftUI
 struct SagakSagakApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           CoordinatorView()
         }
     }
 }
