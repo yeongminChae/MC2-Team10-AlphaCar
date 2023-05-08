@@ -7,16 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D728D2A070BFA00119DB9 /* Colors.swift */; };
+		A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A83D72992A07938600119DB9 /* ComposableArchitecture */; };
+		A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C32A07A45100119DB9 /* SplashView.swift */; };
+		A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C52A07A47600119DB9 /* LoginView.swift */; };
+		A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C82A07A4EA00119DB9 /* Coordinator.swift */; };
+		A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */; };
+		A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CE2A07AAC100119DB9 /* SignUpView.swift */; };
+		A83D72D42A07E58200119DB9 /* RepoSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D32A07E58200119DB9 /* RepoSearch.swift */; };
+		A83D72D62A07E5A900119DB9 /* RepoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */; };
+		A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D72A07E5D000119DB9 /* LoginDomain.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
-		A8F10D812A008FB50015EC23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D802A008FB50015EC23 /* ContentView.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
 		A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A83D728D2A070BFA00119DB9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A83D72C32A07A45100119DB9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		A83D72C52A07A47600119DB9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A83D72C82A07A4EA00119DB9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		A83D72CE2A07AAC100119DB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		A83D72D32A07E58200119DB9 /* RepoSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearch.swift; sourceTree = "<group>"; };
+		A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchView.swift; sourceTree = "<group>"; };
+		A83D72D72A07E5D000119DB9 /* LoginDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomain.swift; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
-		A8F10D802A008FB50015EC23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8F10D822A008FB60015EC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +43,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
+				A83D728C2A070BEF00119DB9 /* Color */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A83D728C2A070BEF00119DB9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A83D728D2A070BFA00119DB9 /* Colors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A83D72972A07934E00119DB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
+				A83D72D02A07AB9A00119DB9 /* Splash */,
+				A83D72D12A07ABA700119DB9 /* Login */,
+				A83D72D22A07ABB300119DB9 /* SignUp */,
+				A83D72D32A07E58200119DB9 /* RepoSearch.swift */,
+				A83D72D52A07E5A900119DB9 /* RepoSearchView.swift */,
+			);
+			name = View;
+			path = ../View;
+			sourceTree = "<group>";
+		};
+		A83D72C72A07A4A300119DB9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A83D72C82A07A4EA00119DB9 /* Coordinator.swift */,
+				A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A83D72D02A07AB9A00119DB9 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A83D72C32A07A45100119DB9 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A83D72D12A07ABA700119DB9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A83D72D72A07E5D000119DB9 /* LoginDomain.swift */,
+				A83D72C52A07A47600119DB9 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A83D72D22A07ABB300119DB9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A83D72CE2A07AAC100119DB9 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		A8F10D722A008FB50015EC23 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +134,9 @@
 		A8F10D7D2A008FB50015EC23 /* SagakSagak */ = {
 			isa = PBXGroup;
 			children = (
-				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
-				A8F10D802A008FB50015EC23 /* ContentView.swift */,
-				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
+				A83D72C72A07A4A300119DB9 /* Coordinator */,
+				A83D72972A07934E00119DB9 /* View */,
+				A83D728B2A070BDB00119DB9 /* DesignSystem */,
 				A8F10D842A008FB60015EC23 /* Preview Content */,
 			);
 			path = SagakSagak;
@@ -83,6 +166,9 @@
 			dependencies = (
 			);
 			name = SagakSagak;
+			packageProductDependencies = (
+				A83D72992A07938600119DB9 /* ComposableArchitecture */,
+			);
 			productName = SagakSagak;
 			productReference = A8F10D7B2A008FB50015EC23 /* SagakSagak.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +197,9 @@
 				Base,
 			);
 			mainGroup = A8F10D722A008FB50015EC23;
+			packageReferences = (
+				A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A8F10D7C2A008FB50015EC23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +226,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F10D812A008FB50015EC23 /* ContentView.swift in Sources */,
+				A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */,
+				A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */,
+				A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */,
+				A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */,
+				A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */,
+				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
+				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
+				A83D72D62A07E5A900119DB9 /* RepoSearchView.swift in Sources */,
+				A83D72D42A07E58200119DB9 /* RepoSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +372,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +402,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A83D72992A07938600119DB9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A83D72982A07938600119DB9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8F10D732A008FB50015EC23 /* Project object */;
 }
