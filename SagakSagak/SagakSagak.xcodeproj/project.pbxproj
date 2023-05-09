@@ -16,14 +16,17 @@
 		A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CE2A07AAC100119DB9 /* SignUpView.swift */; };
 		A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D72A07E5D000119DB9 /* LoginDomain.swift */; };
 		A878E4962A09D55800B97358 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4952A09D55800B97358 /* FontManager.swift */; };
-		A878E4A02A09DFF300B97358 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */; };
-		A878E4A12A09DFF300B97358 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */; };
-		A878E4A22A09DFF300B97358 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */; };
-		A878E4A32A09DFF300B97358 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */; };
 		A878E4A52A09E49C00B97358 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4A42A09E49C00B97358 /* Const.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
 		A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */; };
+		BF791C4D2A0A338700BA00D2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF791C4C2A0A338700BA00D2 /* DrawingView.swift */; };
+		BF791C4F2A0A339200BA00D2 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF791C4E2A0A339200BA00D2 /* CanvasView.swift */; };
+		BF791C512A0A339B00BA00D2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF791C502A0A339B00BA00D2 /* Line.swift */; };
+		BF791C532A0A37EE00BA00D2 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C522A0A37EE00BA00D2 /* NanumSquareRoundL.ttf */; };
+		BF791C552A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C542A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf */; };
+		BF791C572A0A380700BA00D2 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C562A0A380700BA00D2 /* NanumSquareRoundB.ttf */; };
+		BF791C592A0A381500BA00D2 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C582A0A381500BA00D2 /* NanumSquareRoundR.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,15 +39,18 @@
 		A83D72D72A07E5D000119DB9 /* LoginDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomain.swift; sourceTree = "<group>"; };
 		A878E4952A09D55800B97358 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		A878E4982A09D8A100B97358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundR.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundR.ttf"; sourceTree = "<group>"; };
-		A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf"; sourceTree = "<group>"; };
-		A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundL.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundL.ttf"; sourceTree = "<group>"; };
-		A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundEB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf"; sourceTree = "<group>"; };
 		A878E4A42A09E49C00B97358 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
 		A8F10D822A008FB60015EC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF791C4C2A0A338700BA00D2 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		BF791C4E2A0A339200BA00D2 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		BF791C502A0A339B00BA00D2 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		BF791C522A0A37EE00BA00D2 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundL.ttf; sourceTree = "<group>"; };
+		BF791C542A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
+		BF791C562A0A380700BA00D2 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
+		BF791C582A0A381500BA00D2 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
 				A83D72D02A07AB9A00119DB9 /* Splash */,
 				A83D72D12A07ABA700119DB9 /* Login */,
+				BF791C4B2A0A332900BA00D2 /* Drawing */,
 				A83D72D22A07ABB300119DB9 /* SignUp */,
 			);
 			name = View;
@@ -136,10 +143,10 @@
 		A878E4902A09D4A600B97358 /* NanumSquareRound */ = {
 			isa = PBXGroup;
 			children = (
-				A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */,
-				A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */,
-				A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */,
-				A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */,
+				BF791C582A0A381500BA00D2 /* NanumSquareRoundR.ttf */,
+				BF791C562A0A380700BA00D2 /* NanumSquareRoundB.ttf */,
+				BF791C542A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf */,
+				BF791C522A0A37EE00BA00D2 /* NanumSquareRoundL.ttf */,
 			);
 			path = NanumSquareRound;
 			sourceTree = "<group>";
@@ -178,6 +185,16 @@
 				A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF791C4B2A0A332900BA00D2 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				BF791C4C2A0A338700BA00D2 /* DrawingView.swift */,
+				BF791C4E2A0A339200BA00D2 /* CanvasView.swift */,
+				BF791C502A0A339B00BA00D2 /* Line.swift */,
+			);
+			path = Drawing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,12 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A878E4A32A09DFF300B97358 /* NanumSquareRoundEB.ttf in Resources */,
 				A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */,
+				BF791C552A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf in Resources */,
 				A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */,
-				A878E4A02A09DFF300B97358 /* NanumSquareRoundR.ttf in Resources */,
-				A878E4A12A09DFF300B97358 /* NanumSquareRoundB.ttf in Resources */,
-				A878E4A22A09DFF300B97358 /* NanumSquareRoundL.ttf in Resources */,
+				BF791C532A0A37EE00BA00D2 /* NanumSquareRoundL.ttf in Resources */,
+				BF791C572A0A380700BA00D2 /* NanumSquareRoundB.ttf in Resources */,
+				BF791C592A0A381500BA00D2 /* NanumSquareRoundR.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */,
+				BF791C4D2A0A338700BA00D2 /* DrawingView.swift in Sources */,
 				A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */,
+				BF791C4F2A0A339200BA00D2 /* CanvasView.swift in Sources */,
 				A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */,
 				A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */,
 				A878E4962A09D55800B97358 /* FontManager.swift in Sources */,
+				BF791C512A0A339B00BA00D2 /* Line.swift in Sources */,
 				A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */,
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
