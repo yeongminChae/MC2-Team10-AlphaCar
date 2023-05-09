@@ -14,14 +14,6 @@ struct Line {
     var lineWidth : CGFloat
 }
 
-//let crayonColors1: [(image: String, color: Color)] = [
-//    ("redcrayon", Color.crayon1),
-//    ("orangecrayon", Color.crayon2),
-//    ("yellowcrayon", Color.crayon3),
-//    ("greencrayon", Color.crayon4),
-//    ("bluecrayon", Color.crayon5),
-//    ("purplecrayon", Color.crayon6)
-//]
 let crayonColors1: [(image: String, color: Color, id: Int)] = [
     ("redcrayon", Color.red, 1),
     ("orangecrayon", Color.orange, 2),
@@ -31,11 +23,11 @@ let crayonColors1: [(image: String, color: Color, id: Int)] = [
     ("purplecrayon", Color.purple, 6)
 ]
 
-let crayonColors2: [(image: String, color: Color)] = [
-    ("pinkcrayon", Color.crayon7),
-    ("browncrayon", Color.crayon8),
-    ("graycrayon", Color.crayon9),
-    ("blackcrayon", Color.crayon10),
+let crayonColors2: [(image: String, color: Color, id: Int)] = [
+    ("pinkcrayon", Color.crayon7, 7),
+    ("browncrayon", Color.crayon8, 8),
+    ("graycrayon", Color.crayon9, 9),
+    ("blackcrayon", Color.crayon10, 10),
 ]
 
 
@@ -79,7 +71,7 @@ struct DrawingView: View {
                         Image("button_back")
                             .resizable()
                             .frame(width: 48, height: 48)
-//                            .padding(.top, 9)
+                        //                            .padding(.top, 9)
                             .padding(.leading, 24)
                             .padding(.bottom, 24)
                     }
@@ -132,14 +124,14 @@ struct DrawingView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 48, height: 48)
-//                            .padding(.bottom, 9)
+                        //                            .padding(.bottom, 9)
                             .padding(.trailing, 48)
                             .padding(.top, 24)
                         ForEach(crayonColors2, id: \.0) { crayon in
                             Button(action: {
                                 selectedWidth = 5
                                 selectedColor = crayon.color
-                                isRedTapped = true
+                                selectedCrayon = crayon.id
                             }, label: {
                                 Image(crayon.image)
                                     .resizable()
@@ -147,29 +139,31 @@ struct DrawingView: View {
                                     .frame(width: 108, height: 28)
                                     .padding(.bottom, 3)
                                     .padding(.leading, 30)
-                                    .offset(x: isRedTapped ? -20 : 1, y: 0)
+                                    .offset(x: selectedCrayon == crayon.id ? -20 : 0, y:-10)
+                                    .animation(.spring())
                             })
                         }
                         Button(action: {
                             selectedWidth = 20
                             selectedColor = .white
-                            
+                            selectedCrayon = 0
                         }) {
                             Image("eraser")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 108, height: 68)
                                 .offset(x: selectedWidth == 20 ? -21 : 0, y: 0)
+                                .animation(.spring())
                                 .padding(.bottom, 3)
                                 .padding(.trailing, 24)
                         }
-
+                        
                         Image(isDrawing ? "button_next" : "button_next_enabled")
                             .padding(.bottom, 10)
                             .padding(.trailing, 24)
                     }
                     .padding(.leading, 24)
-                   // .layoutPriority(0)
+                    // .layoutPriority(0)
                 }
             }
             
