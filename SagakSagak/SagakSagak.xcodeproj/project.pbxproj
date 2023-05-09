@@ -15,6 +15,11 @@
 		A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */; };
 		A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CE2A07AAC100119DB9 /* SignUpView.swift */; };
 		A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D72A07E5D000119DB9 /* LoginDomain.swift */; };
+		A878E4962A09D55800B97358 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4952A09D55800B97358 /* FontManager.swift */; };
+		A878E4A02A09DFF300B97358 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */; };
+		A878E4A12A09DFF300B97358 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */; };
+		A878E4A22A09DFF300B97358 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */; };
+		A878E4A32A09DFF300B97358 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
 		A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */; };
@@ -28,6 +33,12 @@
 		A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		A83D72CE2A07AAC100119DB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A83D72D72A07E5D000119DB9 /* LoginDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomain.swift; sourceTree = "<group>"; };
+		A878E4952A09D55800B97358 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		A878E4982A09D8A100B97358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundR.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundR.ttf"; sourceTree = "<group>"; };
+		A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf"; sourceTree = "<group>"; };
+		A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundL.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundL.ttf"; sourceTree = "<group>"; };
+		A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundEB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf"; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
 		A8F10D822A008FB60015EC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,8 +60,9 @@
 		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
 				A83D728C2A070BEF00119DB9 /* Color */,
+				A878E48F2A09D49400B97358 /* Font */,
+				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -109,6 +121,26 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		A878E48F2A09D49400B97358 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A878E4902A09D4A600B97358 /* NanumSquareRound */,
+				A878E4952A09D55800B97358 /* FontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A878E4902A09D4A600B97358 /* NanumSquareRound */ = {
+			isa = PBXGroup;
+			children = (
+				A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */,
+				A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */,
+				A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */,
+				A878E49C2A09DFF300B97358 /* NanumSquareRoundR.ttf */,
+			);
+			path = NanumSquareRound;
+			sourceTree = "<group>";
+		};
 		A8F10D722A008FB50015EC23 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +160,7 @@
 		A8F10D7D2A008FB50015EC23 /* SagakSagak */ = {
 			isa = PBXGroup;
 			children = (
+				A878E4982A09D8A100B97358 /* Info.plist */,
 				A83D72C72A07A4A300119DB9 /* Coordinator */,
 				A83D72972A07934E00119DB9 /* View */,
 				A83D728B2A070BDB00119DB9 /* DesignSystem */,
@@ -208,8 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A878E4A32A09DFF300B97358 /* NanumSquareRoundEB.ttf in Resources */,
 				A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */,
 				A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */,
+				A878E4A02A09DFF300B97358 /* NanumSquareRoundR.ttf in Resources */,
+				A878E4A12A09DFF300B97358 /* NanumSquareRoundB.ttf in Resources */,
+				A878E4A22A09DFF300B97358 /* NanumSquareRoundL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +261,7 @@
 				A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */,
 				A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */,
 				A83D72C92A07A4EA00119DB9 /* Coordinator.swift in Sources */,
+				A878E4962A09D55800B97358 /* FontManager.swift in Sources */,
 				A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */,
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
@@ -360,6 +398,7 @@
 				DEVELOPMENT_TEAM = XGHDQG66U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SagakSagak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -392,6 +431,7 @@
 				DEVELOPMENT_TEAM = XGHDQG66U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SagakSagak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

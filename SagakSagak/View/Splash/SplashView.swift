@@ -12,12 +12,18 @@ struct SplashView: View {
     
     var body: some View {
         
-        Button("로그인 화면으로 이동"){
-            coordinator.push(.login)
+        VStack{
+            Text("스플래시")
+                .font(FontManager.shared.nanumsquare(.extrabold, 30))
+                .foregroundColor(.system1)
+            
+            Button("로그인 화면으로 이동"){
+                coordinator.push(.login)
+            }
         }
         .navigationTitle("스플래시 화면")
     }
-    
+
     
 }
 
