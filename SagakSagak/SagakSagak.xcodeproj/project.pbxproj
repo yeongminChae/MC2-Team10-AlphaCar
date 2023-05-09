@@ -20,6 +20,7 @@
 		A878E4A12A09DFF300B97358 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */; };
 		A878E4A22A09DFF300B97358 /* NanumSquareRoundL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */; };
 		A878E4A32A09DFF300B97358 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */; };
+		A878E4A52A09E49C00B97358 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4A42A09E49C00B97358 /* Const.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
 		A8F10D832A008FB60015EC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D822A008FB60015EC23 /* Assets.xcassets */; };
 		A8F10D862A008FB60015EC23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F10D852A008FB60015EC23 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		A878E49D2A09DFF300B97358 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf"; sourceTree = "<group>"; };
 		A878E49E2A09DFF300B97358 /* NanumSquareRoundL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundL.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundL.ttf"; sourceTree = "<group>"; };
 		A878E49F2A09DFF300B97358 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareRoundEB.ttf; path = "../../../../../../../../../../Downloads/나눔 글꼴/나눔스퀘어라운드/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf"; sourceTree = "<group>"; };
+		A878E4A42A09E49C00B97358 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		A8F10D7B2A008FB50015EC23 /* SagakSagak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SagakSagak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SagakSagakApp.swift; sourceTree = "<group>"; };
 		A8F10D822A008FB60015EC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				A878E4A42A09E49C00B97358 /* Const.swift */,
 				A83D728C2A070BEF00119DB9 /* Color */,
 				A878E48F2A09D49400B97358 /* Font */,
 				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
@@ -124,8 +127,8 @@
 		A878E48F2A09D49400B97358 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				A878E4902A09D4A600B97358 /* NanumSquareRound */,
 				A878E4952A09D55800B97358 /* FontManager.swift */,
+				A878E4902A09D4A600B97358 /* NanumSquareRound */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
+				A878E4A52A09E49C00B97358 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,8 +406,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,8 +439,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
