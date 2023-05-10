@@ -20,8 +20,8 @@ enum Theme : String {
     
     static let dayRange = 0..<18
     static let nightRange = 18..<24
-//    static let nightRange = (0..<6) + (18..<24)
-//    static let nightRange = (0..<6).joined(with: 18..<24)
+    //    static let nightRange = (0..<6) + (18..<24)
+    //    static let nightRange = (0..<6).joined(with: 18..<24)
     static var current : Theme{
         let hour = Calendar.current.component(.hour, from: Date())
         if Theme.dayRange.contains(hour) || Theme.nightRange.contains(hour) {
@@ -67,7 +67,7 @@ let buttons: [ButtonStyle] = [.archive, .clock, .frame, .lamp, .letter]
 
 struct MainView: View {
     @EnvironmentObject private var coordinator: Coordinator
-
+    
     //time related
     @State var receiver = Timer.publish(every: 1, on: .current, in: .default)
         .autoconnect()
@@ -79,16 +79,24 @@ struct MainView: View {
     @State private var isLampOn = false
     @State private var isCurtainOn = false
     @State private var isLetter = false
-
+    
     var body: some View {
         ZStack {
             //창문 밖 색깔? 이미지?
             ZStack {
                 if(!isLampOn){
-                    Image("background1" +
-                        (Theme.current == .day ? "_night" : "_day"))
+                    if(!isCurtainOn){
+                        Image("background1" +
+                              (Theme.current == .day ? "_night" : "_day"))
                         .resizable()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                    else{
+                        Image("background2" +
+                              (Theme.current == .day ? "_night" : "_day"))
+                        .resizable()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
                 }
                 else{
                     Image("background_on")
@@ -96,9 +104,9 @@ struct MainView: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
                 
-    //            Image("bg")
-    //                .resizable()
-    //                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                //            Image("bg")
+                //                .resizable()
+                //                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
                 Button(action: {
                     isActive = true
@@ -106,18 +114,30 @@ struct MainView: View {
                     Image("profile")
                 }
                 .offset(x: -377.5, y: -148.4)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
                 Button(action: {
-                    isActive = true
+                    isCurtainOn.toggle()
                 }) {
-                    if (isLampOn == false){
-                        Image("curtain_closed" +
-                            (Theme.current == .day ? "_night" : "_day"))
+                    if(!isCurtainOn){
+                        if (isLampOn == false){
+                            Image("curtain_closed" +
+                                  (Theme.current == .day ? "_night" : "_day"))
+                        }
+                        else{
+                            Image("curtain_closed")
+                        }
                     }
                     else{
-                        Image("curtain_closed")
+                        if (isLampOn == false){
+                            Image("curtain_opened" +
+                                  (Theme.current == .day ? "_night" : "_day"))
+                        }
+                        else{
+                            Image("curtain_opened")
+                        }
                     }
                 }
                 .offset(x: 0, y: -120)
@@ -129,7 +149,7 @@ struct MainView: View {
                 }) {
                     if (isLampOn == false){
                         Image("lamp" +
-                            (Theme.current == .day ? "_night" : "_day"))
+                              (Theme.current == .day ? "_night" : "_day"))
                     }
                     else{
                         Image("lamp")
@@ -137,6 +157,7 @@ struct MainView: View {
                     
                 }
                 .offset(x: -310, y: -47)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 2, x: 0, y: 4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -145,7 +166,7 @@ struct MainView: View {
                 }) {
                     if (!isLampOn){
                         Image("clock" +
-                            (Theme.current == .day ? "_night" : "_day"))
+                              (Theme.current == .day ? "_night" : "_day"))
                     }
                     else{
                         Image("clock")
@@ -153,6 +174,7 @@ struct MainView: View {
                     
                 }
                 .offset(x: 334, y: 25)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -165,13 +187,14 @@ struct MainView: View {
                 }) {
                     if (!isLampOn){
                         Image("frame" +
-                            (Theme.current == .day ? "_night" : "_day"))
+                              (Theme.current == .day ? "_night" : "_day"))
                     }
                     else{
                         Image("frame")
                     }
                 }
                 .offset(x: 334, y: -107.5)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -180,55 +203,54 @@ struct MainView: View {
                 }) {
                     if(!isLampOn){
                         Image("archive" +
-                            (Theme.current == .day ? "_night" : "_day"))
+                              (Theme.current == .day ? "_night" : "_day"))
                     }
                     else{
                         Image("archive")
                     }
                 }
                 .offset(x: -224, y: 97)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
                 Button(action: {
-                    isLetter = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                        self.isLetter = true
+                    }
                 }) {
-                    if(!isLampOn){
-                        Image("letter" +
-                              (Theme.current == .day ? "_night" : "_day"))
+                    if(!isLetter){
+                        if(!isLampOn){
+                            Image("letter" +
+                                  (Theme.current == .day ? "_night" : "_day"))
+                        }
+                        else{
+                            Image("letter")
+                        }
                     }
                     else{
-                        Image("letter")
+                        if(!isLampOn){
+                            Image("letter_open" +
+                                  (Theme.current == .day ? "_night" : "_day"))
+                        }
+                        else{
+                            Image("letter_open")
+                        }
                     }
                 }
                 .offset(x: 0, y: 97)
+                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isLetter) {
                     DrawingView()
+                    //                        .animation(.easeOut(duration: 10.0))
                 }
             }
-            .background(Theme.current == .day ? .black : .blue)
+            .background(Theme.current == .day ? .black : .system1)
             .ignoresSafeArea()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-    //        .onAppear(perform: {
-    //            let calender = Calendar.current
-    //            let hour = calender.component(.hour, from: Date())
-    //            let min = calender.component(.minute, from: Date())
-    //            withAnimation(Animation.linear(duration: 0.1)){
-    //                self.time = currentTime
-    //            }
-    //        })
-    //                .onReceive(receiver) { (_) in
-    //                    let calender = Calendar.current
-    //                    let hour = calender.component(.hour, from: Date())
-    //                    let min = calender.component(.minute, from: Date())
-    //                    withAnimation(Animation.linear(duration: 0.1)){
-    //                        self.time = currentTime
-    //                    }
-    //                }
             .onReceive(receiver) { time in
                 currentTime = time
-                
-        }
+            }
         }
     }
 }
