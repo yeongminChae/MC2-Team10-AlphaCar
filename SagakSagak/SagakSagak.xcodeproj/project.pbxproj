@@ -27,6 +27,9 @@
 		BF791C552A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C542A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf */; };
 		BF791C572A0A380700BA00D2 /* NanumSquareRoundB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C562A0A380700BA00D2 /* NanumSquareRoundB.ttf */; };
 		BF791C592A0A381500BA00D2 /* NanumSquareRoundR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF791C582A0A381500BA00D2 /* NanumSquareRoundR.ttf */; };
+		BFCE55272A0B8D4B003A85CA /* CharacterExpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE55242A0B8D4B003A85CA /* CharacterExpressView.swift */; };
+		BFCE55282A0B8D4B003A85CA /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE55252A0B8D4B003A85CA /* FaceView.swift */; };
+		BFCE55292A0B8D4B003A85CA /* ExpressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE55262A0B8D4B003A85CA /* ExpressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		BF791C542A0A37FF00BA00D2 /* NanumSquareRoundEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundEB.ttf; sourceTree = "<group>"; };
 		BF791C562A0A380700BA00D2 /* NanumSquareRoundB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundB.ttf; sourceTree = "<group>"; };
 		BF791C582A0A381500BA00D2 /* NanumSquareRoundR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundR.ttf; sourceTree = "<group>"; };
+		BFCE55242A0B8D4B003A85CA /* CharacterExpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExpressView.swift; sourceTree = "<group>"; };
+		BFCE55252A0B8D4B003A85CA /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		BFCE55262A0B8D4B003A85CA /* ExpressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
 				A83D72D02A07AB9A00119DB9 /* Splash */,
 				A83D72D12A07ABA700119DB9 /* Login */,
+				BFCE55232A0B8D23003A85CA /* FaceExpress */,
 				BF791C4B2A0A332900BA00D2 /* Drawing */,
 				A83D72D22A07ABB300119DB9 /* SignUp */,
 			);
@@ -197,6 +204,16 @@
 			path = Drawing;
 			sourceTree = "<group>";
 		};
+		BFCE55232A0B8D23003A85CA /* FaceExpress */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE55262A0B8D4B003A85CA /* ExpressView.swift */,
+				BFCE55242A0B8D4B003A85CA /* CharacterExpressView.swift */,
+				BFCE55252A0B8D4B003A85CA /* FaceView.swift */,
+			);
+			path = FaceExpress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */,
+				BFCE55292A0B8D4B003A85CA /* ExpressView.swift in Sources */,
 				BF791C4D2A0A338700BA00D2 /* DrawingView.swift in Sources */,
 				A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */,
 				BF791C4F2A0A339200BA00D2 /* CanvasView.swift in Sources */,
@@ -290,6 +308,8 @@
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
 				A878E4A52A09E49C00B97358 /* Const.swift in Sources */,
+				BFCE55272A0B8D4B003A85CA /* CharacterExpressView.swift in Sources */,
+				BFCE55282A0B8D4B003A85CA /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
