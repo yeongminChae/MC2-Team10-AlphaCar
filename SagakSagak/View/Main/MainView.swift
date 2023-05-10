@@ -18,7 +18,7 @@ enum Theme : String {
     case day
     case night
     
-    static let dayRange = 1..<18
+    static let dayRange = 0..<18
     static let nightRange = 18..<24
 //    static let nightRange = (0..<6) + (18..<24)
 //    static let nightRange = (0..<6).joined(with: 18..<24)
