@@ -25,7 +25,7 @@ enum Theme : String {
     static var current : Theme{
         let hour = Calendar.current.component(.hour, from: Date())
         if Theme.dayRange.contains(hour) || Theme.nightRange.contains(hour) {
-            return hour >= 6 && hour < 18 ? .day : .night
+            return hour >= 6 && hour < 18 ? .night : .day
         }
         return .day // 기본값은 day로 설정
     }
@@ -76,7 +76,7 @@ struct MainView: View {
     
     //button related
     @State private var isActive = false
-    @State private var isLampOn = false
+    @State private var isLampOn = true
     @State private var isCurtainOn = false
     @State private var isLetter = false
     
@@ -157,24 +157,23 @@ struct MainView: View {
                     
                 }
                 .offset(x: -310, y: -47)
-                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 2, x: 0, y: 4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
                 Button(action: {
                     isActive = true
                 }) {
-                    if (!isLampOn){
+                    if (isLampOn){
                         Image("clock" +
-                              (Theme.current == .day ? "_night" : "_day"))
+                              (Theme.current == .day ? "_moon" : "_sun"))
                     }
                     else{
-                        Image("clock")
+                        Image("clock_off" +
+                              (Theme.current == .day ? "_moon" : "_sun"))
                     }
                     
                 }
                 .offset(x: 334, y: 25)
-                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -194,7 +193,6 @@ struct MainView: View {
                     }
                 }
                 .offset(x: 334, y: -107.5)
-                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -210,7 +208,6 @@ struct MainView: View {
                     }
                 }
                 .offset(x: -224, y: 97)
-                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isActive) {
                     MainView()
                 }
@@ -239,7 +236,6 @@ struct MainView: View {
                     }
                 }
                 .offset(x: 0, y: 97)
-                .shadow(color: Color(red: 38/255, green: 119/255, blue: 95/255).opacity(0.3), radius: 15, x: 0, y: -4)
                 .sheet(isPresented: $isLetter) {
                     DrawingView()
                     //                        .animation(.easeOut(duration: 10.0))
