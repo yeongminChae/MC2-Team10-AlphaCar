@@ -21,8 +21,11 @@ extension Color {
     static let bg1 = Color(#colorLiteral(red: 0.9590327144, green: 0.9756026864, blue: 1, alpha: 1))
     /// #E1F6F0
     static let bg2 = Color(#colorLiteral(red: 0.9036819339, green: 0.9701080918, blue: 0.9531587958, alpha: 1))
+    /// #D5F0E7
+    static let bg3 = Color(#colorLiteral(red: 0.8352941176, green: 0.9411764706, blue: 0.9058823529, alpha: 1))
     /// #8ED1BD
-    static let bg3 = Color(#colorLiteral(red: 0.6177177429, green: 0.8480247259, blue: 0.7878890634, alpha: 1))
+    static let bg4 = Color(#colorLiteral(red: 0.6177177429, green: 0.8480247259, blue: 0.7878890634, alpha: 1))
+    
     
     //MARK: button_bg
     /// #A6DBCB
