@@ -72,7 +72,7 @@ struct MainView: View {
     @State var receiver = Timer.publish(every: 1, on: .current, in: .default)
         .autoconnect()
     @State private var currentTime : Date = Date.now
-    @State var hour = currentHour
+//    @State var hour = currentHour
     
     //button related
     @State private var isActive = false

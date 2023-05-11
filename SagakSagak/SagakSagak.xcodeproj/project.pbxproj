@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5722D8302A0CCFA00023B0F6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722D82F2A0CCFA00023B0F6 /* MainView.swift */; };
 		A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D728D2A070BFA00119DB9 /* Colors.swift */; };
 		A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A83D72992A07938600119DB9 /* ComposableArchitecture */; };
 		A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C32A07A45100119DB9 /* SplashView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5722D82F2A0CCFA00023B0F6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A83D728D2A070BFA00119DB9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A83D72C32A07A45100119DB9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		A83D72C52A07A47600119DB9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5722D82E2A0CCF750023B0F6 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5722D82F2A0CCFA00023B0F6 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		A83D72972A07934E00119DB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5722D82E2A0CCF750023B0F6 /* MainView */,
 				A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */,
 				A83D72D02A07AB9A00119DB9 /* Splash */,
 				A83D72D12A07ABA700119DB9 /* Login */,
@@ -313,6 +324,7 @@
 				A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */,
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
+				5722D8302A0CCFA00023B0F6 /* MainView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
 				A83E86F82A0CC6CC005CB09D /* GLNavBarTitleView.swift in Sources */,
 				A878E4A52A09E49C00B97358 /* Const.swift in Sources */,
