@@ -15,6 +15,7 @@
 		A83D72CD2A07A82D00119DB9 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */; };
 		A83D72CF2A07AAC100119DB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72CE2A07AAC100119DB9 /* SignUpView.swift */; };
 		A83D72D82A07E5D000119DB9 /* LoginDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72D72A07E5D000119DB9 /* LoginDomain.swift */; };
+		A83E86F82A0CC6CC005CB09D /* GLNavBarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E86F72A0CC6CC005CB09D /* GLNavBarTitleView.swift */; };
 		A878E4962A09D55800B97358 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4952A09D55800B97358 /* FontManager.swift */; };
 		A878E4A52A09E49C00B97358 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A878E4A42A09E49C00B97358 /* Const.swift */; };
 		A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F10D7E2A008FB50015EC23 /* SagakSagakApp.swift */; };
@@ -39,6 +40,7 @@
 		A83D72CC2A07A82D00119DB9 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		A83D72CE2A07AAC100119DB9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A83D72D72A07E5D000119DB9 /* LoginDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomain.swift; sourceTree = "<group>"; };
+		A83E86F72A0CC6CC005CB09D /* GLNavBarTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLNavBarTitleView.swift; sourceTree = "<group>"; };
 		A878E4952A09D55800B97358 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		A878E4982A09D8A100B97358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A878E4A42A09E49C00B97358 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A878E4A42A09E49C00B97358 /* Const.swift */,
+				A83E86F62A0CC6B8005CB09D /* Component */,
 				A83D728C2A070BEF00119DB9 /* Color */,
 				A878E48F2A09D49400B97358 /* Font */,
 				A8F10D822A008FB60015EC23 /* Assets.xcassets */,
@@ -134,6 +137,14 @@
 				A83D72CE2A07AAC100119DB9 /* SignUpView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A83E86F62A0CC6B8005CB09D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A83E86F72A0CC6CC005CB09D /* GLNavBarTitleView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		A878E48F2A09D49400B97358 /* Font */ = {
@@ -303,6 +314,7 @@
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
+				A83E86F82A0CC6CC005CB09D /* GLNavBarTitleView.swift in Sources */,
 				A878E4A52A09E49C00B97358 /* Const.swift in Sources */,
 				BFCE55272A0B8D4B003A85CA /* CharacterExpressView.swift in Sources */,
 				BFCE55282A0B8D4B003A85CA /* FaceView.swift in Sources */,
