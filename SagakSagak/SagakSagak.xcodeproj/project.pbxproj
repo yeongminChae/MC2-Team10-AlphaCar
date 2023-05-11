@@ -14,6 +14,8 @@
 		A3196F482A0CE5A300972C6E /* ToCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3196F442A0CE5A300972C6E /* ToCameraView.swift */; };
 		A3196F492A0CE5A300972C6E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3196F462A0CE5A300972C6E /* Color.swift */; };
 		A3196F4A2A0CE5A300972C6E /* TakingPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3196F472A0CE5A300972C6E /* TakingPhoto.swift */; };
+		A3196F4C2A0CE7CA00972C6E /* Draw_ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3196F4B2A0CE7CA00972C6E /* Draw_ExitButton.swift */; };
+		A3196F522A0CEAD500972C6E /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3196F502A0CEAD500972C6E /* Letter.swift */; };
 		A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D728D2A070BFA00119DB9 /* Colors.swift */; };
 		A83D729A2A07938600119DB9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A83D72992A07938600119DB9 /* ComposableArchitecture */; };
 		A83D72C42A07A45100119DB9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D72C32A07A45100119DB9 /* SplashView.swift */; };
@@ -45,6 +47,8 @@
 		A3196F442A0CE5A300972C6E /* ToCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToCameraView.swift; sourceTree = "<group>"; };
 		A3196F462A0CE5A300972C6E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A3196F472A0CE5A300972C6E /* TakingPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakingPhoto.swift; sourceTree = "<group>"; };
+		A3196F4B2A0CE7CA00972C6E /* Draw_ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw_ExitButton.swift; sourceTree = "<group>"; };
+		A3196F502A0CEAD500972C6E /* Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 		A83D728D2A070BFA00119DB9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A83D72C32A07A45100119DB9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		A83D72C52A07A47600119DB9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A3196F4D2A0CEAD500972C6E /* Letter */ = {
+			isa = PBXGroup;
+			children = (
+				A3196F502A0CEAD500972C6E /* Letter.swift */,
+			);
+			path = Letter;
+			sourceTree = "<group>";
+		};
 		A83D728B2A070BDB00119DB9 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 		A83D72972A07934E00119DB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3196F4D2A0CEAD500972C6E /* Letter */,
 				A3196F432A0CE5A300972C6E /* TakePhoto */,
 				171720442A0CDA2100E34C24 /* Lottie */,
 				5722D82E2A0CCF750023B0F6 /* MainView */,
@@ -149,6 +162,7 @@
 				A83D72D12A07ABA700119DB9 /* Login */,
 				BFCE55232A0B8D23003A85CA /* FaceExpress */,
 				BF791C4B2A0A332900BA00D2 /* Drawing */,
+				A3196F4B2A0CE7CA00972C6E /* Draw_ExitButton.swift */,
 			);
 			name = View;
 			path = ../View;
@@ -359,6 +373,7 @@
 				A83D728E2A070BFA00119DB9 /* Colors.swift in Sources */,
 				A83D72C62A07A47600119DB9 /* LoginView.swift in Sources */,
 				A3196F492A0CE5A300972C6E /* Color.swift in Sources */,
+				A3196F522A0CEAD500972C6E /* Letter.swift in Sources */,
 				5722D8302A0CCFA00023B0F6 /* MainView.swift in Sources */,
 				A8F10D7F2A008FB50015EC23 /* SagakSagakApp.swift in Sources */,
 				A3196F4A2A0CE5A300972C6E /* TakingPhoto.swift in Sources */,
@@ -366,6 +381,7 @@
 				A878E4A52A09E49C00B97358 /* Const.swift in Sources */,
 				BFCE55272A0B8D4B003A85CA /* CharacterExpressView.swift in Sources */,
 				BFCE55282A0B8D4B003A85CA /* FaceView.swift in Sources */,
+				A3196F4C2A0CE7CA00972C6E /* Draw_ExitButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
